@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>What Day Is It Today?</title>
+</head>
+<body>
+    <h1>What day is it today?</h1>
+    <% if(kindofDay === "Workday") { %>
+        <h1 style="color: blue"><%= kindofDay%></h1>
+    <% } else { %>
+        <h1 style="color: green"><%= kindofDay%></h1>
+    <% } %>
+    <!--<p><%= kindofDay%></p>-->
+    <table>
+        <tr>
+            <th>First name</th>
+            <td><%= person.firstName%></td>
+        </tr>
+        <tr>
+            <th>Last name</th>
+            <td><%= person.lastName%></td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td><%= person.age%></td>
+        </tr>
+        <tr>
+            <th>Job</th>
+            <td><%= person.job%></td>
+        </tr>
+    </table>
+</body>
+</html>
